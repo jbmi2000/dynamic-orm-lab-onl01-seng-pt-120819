@@ -53,14 +53,14 @@ def self.find_by_name(name)
   DB[:conn].execute(sql, name)
 end
 
-def self.find_by(attributes)
-  sql = "SELECT * FROM #{self.table_name} WHERE attributes=? LIMIT 1"
-
-  DB[:conn].execute(sql, attributes).each do |row|
-  end
-
-
-end
+# def self.find_by(attributes)
+#   sql = "SELECT * FROM #{self.table_name} WHERE attributes=? LIMIT 1"
+# 
+#   DB[:conn].execute(sql, attributes).each do |row|
+#   end
+# 
+# 
+# end
 
 def self.find_by(attribute)
   #executes the SQL to find a row by the attribute passed into the method
