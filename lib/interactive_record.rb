@@ -67,7 +67,7 @@ def self.find_by(attribute)
   #WHERE name = ? OR grade = ? OR id = ?
   #attribute is a hash, so it has a key/value pair
   attribute_key = attribute.keys.join()
-  attrubute_value = attribute.values.first
+  attribute_value = attribute.values.first
   sql =<<-SQL
     SELECT * FROM #{self.table_name}
     WHERE #{attribute_key} = "#{attrubute_value}"
