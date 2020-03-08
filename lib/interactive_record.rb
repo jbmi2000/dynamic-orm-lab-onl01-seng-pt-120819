@@ -58,8 +58,6 @@ end
 #
 #   DB[:conn].execute(sql, attributes).each do |row|
 #   end
-#
-#
 # end
 
 def self.find_by(attribute)
